@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head lang="en">
+    <meta charset="UTF-8">
+    <script language="JavaScript">
+      function testVariable() {
+            var strText = document.getElementById("textone").value;          
+            var strText1 = document.getElementById("textTWO").value;
+            var strText1 = document.getElementById("textTHR").value;
+            var result = strText + ' ' + strText1 + '' + strText2;
+            document.getElementById('spanResult').textContent = result;
+      }
+      
+    </script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+
+
+    .navbar{
+            background-color: rgb(9, 55, 75);
+            border: 1px solid rgb(229, 132, 132);
+            color: rgb(233, 222, 222);
+            padding: 30px;
+            border-radius: 13px;
+            width: 150px;
+            height: 550px;
+            text-decoration: none;
+        }
+
+        .navbar a{
+            color: rgb(214, 154, 25);
+            text-decoration: none;
+            font-style: bold;
+        }
+        .navbar :hover{
+            border: rgb(219, 202, 106);
+            background-color: rgb(87, 113, 230);
+            color: rgb(134, 163, 64);
+        }
+
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" name="firstname" id="textone">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" name="lastname" id="textTWO">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Fruits</label>
+      </div>
+      <div class="col-75">
+        <select name="Fruits" id="textTHR">
+          <option value="australia">Mango</option>
+          <option value="canada">Apple</option>
+          <option value="usa">Orange</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+
+    <button  onclick="testVariable()">Submit</button> <br />
+    <span id="spanResult">
+
+    </span>
+    <nav class="navbar">
+      <h3><a href="#">Toggle</a></h3></h3>    
+      <h3><a href="Userdetails.html">User Profile</a></h3>
+      <h3><a href="Mainform.html">Login form</a></h3>
+      <h3><a href="Location.html">Map</a></h3>
+      </nav>
+     
+
+  </form>
+</div>
+</body>
+</head>
+</html>
+  
